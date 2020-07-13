@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Deutschlander;
+    src: url("../font/Deutschlander.otf") format("opentype");
+}
+
+@keyframes pan {
+    0% {
+        background-position: 25% top;
+    }
+
+    25% {
+        background-position: 75% top;
+    }
+
+    50% {
+        background-position: 75% top;
+    }
+
+    75% {
+        background-position: 25% top;
+    }
+
+    100% {
+        background-position: 25% top;
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    body {
+        animation: pan 30s infinite 2s;
+    }
+}
+
+* {
+    color: #fff;
+    font-family: Deutschlander;
+    text-transform: uppercase;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #e0a900;
+}
+
+body {
+    background-color: #000;
+    background-image: url("../img/bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+#bg {
+    height: 100vh;
+}
+
+.container {
+    padding-top: 38vh;
+}
+
+.row {
+    background-color: rgba(0, 0, 0, 0)
+}
