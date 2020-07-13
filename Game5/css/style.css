@@ -27,7 +27,49 @@
 
 @media only screen and (orientation:portrait) {
     body {
-        animation: pan 30s infinite 2s;
+        animation: pan 30s infinite;
+    }
+
+    h1 {
+        font-size: 14vw;
+    }
+
+    h2 {
+        font-size: 13vw;
+    }
+
+    h3 {
+        font-size: 12vw;
+    }
+    
+    .byline {
+        line-height: 50px;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+    
+    .byline {
+        line-height: 10px;
+    }
+    
+    .fl-left {
+        float: left;
+    }
+    
+    .fl-right {
+        float: right;
     }
 }
 
@@ -52,18 +94,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-h1 {
-    font-size: 80px;
-}
-
-h2 {
-    font-size: 60px;
-}
-
-h3 {
-    font-size: 60px;
+    background-attachment: fixed;
 }
 
 #bg {
@@ -71,9 +102,13 @@ h3 {
 }
 
 .container {
-    padding-top: 38vh;
+    padding-top: 35vh;
 }
 
-.row {
-    background-color: rgba(0, 0, 0, 0)
+.locked {
+    color: #bbb
+}
+
+.locked:hover {
+    color: #bbb
 }
