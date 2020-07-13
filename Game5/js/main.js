@@ -5,7 +5,7 @@
 $(document).ready(function () {
     Scrambler({
         target: '.scramble',
-        random: [200, 1000],
+        random: [750, 1500],
         speed: 75,
         afterAll: function () {
             $('.scramble').removeClass('scramble')
