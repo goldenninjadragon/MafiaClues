@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     $('.menu-return').click(function () {
-        $('body').css('background-image','url(../img/bg.jpg)');
+        $('body').css('background-image','url(../Game5/img/bg.jpg)');
         $('body').css('animation','pan 30s infinite');
         $('header, #body').removeClass('hidden');
         $('#code1').addClass('hidden');
