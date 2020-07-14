@@ -28,7 +28,8 @@ $(document).ready(function () {
     });
 
     $('.menu-return').click(function () {
-        $('body').removeClass('bg-overlay');
+        $('body').css('background-image','url(../img/bg.jpg)');
+        $('body').css('animation','pan 30s infinite');
         $('header, #body').removeClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').addClass('hidden');
@@ -36,7 +37,8 @@ $(document).ready(function () {
     });
 
     $('#link1').click(function () {
-        $('body').addClass('bg-overlay');
+        $('body').css('background-image','url(../img/bg-overlay.jpg)');
+        $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').removeClass('hidden');
         $('#code2').addClass('hidden');
@@ -47,13 +49,14 @@ $(document).ready(function () {
                 Scrambler({
                     target: '.scramble1',
                     random: [60000, 60000],
-                    speed: 200,
+                    speed: 500,
                 });
-            }, 1000);
+            }, 500);
     });
 
     $('#link2').click(function () {
-        $('body').addClass('bg-overlay');
+        $('body').css('background-image','url(../img/bg-overlay.jpg)');
+        $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').removeClass('hidden');
@@ -64,13 +67,14 @@ $(document).ready(function () {
                 Scrambler({
                     target: '.scramble2',
                     random: [60000, 60000],
-                    speed: 200,
+                    speed: 500,
                 });
-            }, 1000);
+            }, 500);
     });
 
     $('#link3').click(function () {
-        $('body').addClass('bg-overlay');
+        $('body').css('background-image','url(../img/bg-overlay.jpg)');
+        $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').addClass('hidden');
@@ -81,9 +85,9 @@ $(document).ready(function () {
                 Scrambler({
                     target: '.scramble3',
                     random: [60000, 60000],
-                    speed: 200,
+                    speed: 500,
                 });
-            }, 1000);
+            }, 500);
     });
 
     if (getUrlParameter('unlock') == 'all') {

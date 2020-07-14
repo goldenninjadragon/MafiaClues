@@ -30,19 +30,6 @@
         animation: pan 30s infinite;
     }
 
-    body.bg-overlay {
-        animation: none;
-        background-image: url("../img/bg-overlay.jpg");
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        transition: all 1s ease;
-    }
-
     h1 {
         font-size: 14vw;
     }
@@ -73,19 +60,6 @@
 }
 
 @media only screen and (orientation:landscape) {
-
-    body.bg-overlay {
-        background-image: url("../img/bg-overlay.jpg");
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        transition: all 1s ease;
-    }
-
     h1 {
         font-size: 80px;
     }
@@ -141,10 +115,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: background 1s ease-in;
+    -moz-transition: background 1s ease-in;
+    -o-transition: background 1s ease-in;
+    transition: background 1s ease-in;
 }
 
 p, li {
