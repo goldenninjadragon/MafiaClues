@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     $('.menu-return').click(function () {
-        $('body').css('background-image',"url('../img/bg.jpg')");
+        $('body').css('background-image','url(../img/bg.jpg)');
         $('body').css('animation','pan 30s infinite');
         $('header, #body').removeClass('hidden');
         $('#code1').addClass('hidden');
@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 
     $('#link1').click(function () {
-        $('body').css('background-image',"url('../img/bg-overlay.jpg')");
+        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
         $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').removeClass('hidden');
@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     $('#link2').click(function () {
-        $('body').css('background-image',"url('../img/bg-overlay.jpg')");
+        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
         $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
@@ -73,7 +73,7 @@ $(document).ready(function () {
     });
 
     $('#link3').click(function () {
-        $('body').css('background-image',"url('../img/bg-overlay.jpg')");
+        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
         $('body').css('animation','none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
