@@ -30,6 +30,19 @@
         animation: pan 30s infinite;
     }
 
+    body.bg-overlay {
+        animation: none;
+        background-image: url("../img/bg-overlay.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
     h1 {
         font-size: 14vw;
     }
@@ -42,12 +55,37 @@
         font-size: 12vw;
     }
     
+    h5 {
+        font-size:  10vw;
+    }
+
     .byline {
         line-height: 50px;
+    }
+    
+    .code {
+        font-size: 7vw;
+    }
+
+    .menu {
+        font-size: 8vw;
     }
 }
 
 @media only screen and (orientation:landscape) {
+
+    body.bg-overlay {
+        background-image: url("../img/bg-overlay.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
     h1 {
         font-size: 80px;
     }
@@ -60,16 +98,24 @@
         font-size: 60px;
     }
     
+    h5 {
+        font-size:  45px;
+    }
+
     .byline {
         line-height: 10px;
     }
-    
+
     .fl-left {
         float: left;
     }
-    
+
     .fl-right {
         float: right;
+    }
+
+    .menu {
+        font-size: 35px;
     }
 }
 
@@ -95,18 +141,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+p, li {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    text-transform: none;
 }
 
 #bg {
     height: 100vh;
 }
 
+.code {
+    font-family: "Courier New", Courier, monospace;
+}
 .container {
     padding-top: 35vh;
 }
 
+.hidden {
+    display: none;
+}
+
 .locked {
-    color: #bbb
+    color: #bbb;
+    pointer-events: none;
+    cursor: default;
 }
 
 .locked:hover {
