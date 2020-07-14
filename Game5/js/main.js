@@ -28,17 +28,23 @@ $(document).ready(function () {
     });
 
     $('.menu-return').click(function () {
-        $('body').css('background-image','url(../Game5/img/bg.jpg)');
-        $('body').css('animation','pan 30s infinite');
+        $('body').css('background-image', 'url(../Game5/img/bg.jpg)');
+        $('body').css('animation', 'pan 30s infinite');
         $('header, #body').removeClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').addClass('hidden');
         $('#code3').addClass('hidden');
+
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     });
 
     $('#link1').click(function () {
-        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
-        $('body').css('animation','none');
+        $('body').css('background-image', 'url(../Game5/img/bg-overlay.jpg)');
+        $('body').css('animation', 'none');
         $('header, #body').addClass('hidden');
         $('#code1').removeClass('hidden');
         $('#code2').addClass('hidden');
@@ -48,15 +54,15 @@ $(document).ready(function () {
             function () {
                 Scrambler({
                     target: '.scramble1',
-                    random: [60000, 60000],
+                    random: [60000, 3000000],
                     speed: 500,
                 });
             }, 500);
     });
 
     $('#link2').click(function () {
-        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
-        $('body').css('animation','none');
+        $('body').css('background-image', 'url(../Game5/img/bg-overlay.jpg)');
+        $('body').css('animation', 'none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').removeClass('hidden');
@@ -66,15 +72,15 @@ $(document).ready(function () {
             function () {
                 Scrambler({
                     target: '.scramble2',
-                    random: [60000, 60000],
+                    random: [60000, 3000000],
                     speed: 500,
                 });
             }, 500);
     });
 
     $('#link3').click(function () {
-        $('body').css('background-image','url(../Game5/img/bg-overlay.jpg)');
-        $('body').css('animation','none');
+        $('body').css('background-image', 'url(../Game5/img/bg-overlay.jpg)');
+        $('body').css('animation', 'none');
         $('header, #body').addClass('hidden');
         $('#code1').addClass('hidden');
         $('#code2').addClass('hidden');
@@ -84,7 +90,7 @@ $(document).ready(function () {
             function () {
                 Scrambler({
                     target: '.scramble3',
-                    random: [60000, 60000],
+                    random: [60000, 3000000],
                     speed: 500,
                 });
             }, 500);
