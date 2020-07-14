@@ -41,11 +41,15 @@ $(document).ready(function () {
         $('#code1').removeClass('hidden');
         $('#code2').addClass('hidden');
         $('#code3').addClass('hidden');
-        Scrambler({
-            target: '.scramble1',
-            random: [60000, 60000],
-            speed: 200,
-        });
+
+        setTimeout(
+            function () {
+                Scrambler({
+                    target: '.scramble1',
+                    random: [60000, 60000],
+                    speed: 200,
+                });
+            }, 1000);
     });
 
     $('#link2').click(function () {
@@ -55,11 +59,14 @@ $(document).ready(function () {
         $('#code2').removeClass('hidden');
         $('#code3').addClass('hidden');
 
-        Scrambler({
-            target: '.scramble2',
-            random: [60000, 60000],
-            speed: 100,
-        });
+        setTimeout(
+            function () {
+                Scrambler({
+                    target: '.scramble2',
+                    random: [60000, 60000],
+                    speed: 200,
+                });
+            }, 1000);
     });
 
     $('#link3').click(function () {
@@ -69,13 +76,16 @@ $(document).ready(function () {
         $('#code2').addClass('hidden');
         $('#code3').removeClass('hidden');
 
-        Scrambler({
-            target: '.scramble3',
-            random: [60000, 60000],
-            speed: 100,
-        });
+        setTimeout(
+            function () {
+                Scrambler({
+                    target: '.scramble3',
+                    random: [60000, 60000],
+                    speed: 200,
+                });
+            }, 1000);
     });
-    
+
     if (getUrlParameter('unlock') == 'all') {
         $('#link1').removeClass('locked');
         $('#link2').removeClass('locked');
